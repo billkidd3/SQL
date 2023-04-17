@@ -1,0 +1,31 @@
+--Create MLB Jersey Store Database
+
+CREATE TABLE store (id integer primary key, name text, player text, popularity integer, price integer);
+
+INSERT INTO store VALUES (1, 'Yankees', 'Judge', 1, '99');
+INSERT INTO store VALUES (2, 'Red Sox', 'Ortiz', 2, '99');
+INSERT INTO store VALUES (3, 'Yankees', 'Stanton', 3, '99');
+INSERT INTO store VALUES (4, 'Angels', 'Ohtani', 4, '99');
+INSERT INTO store VALUES (5, 'Angles', 'Trout', 5, '99');
+INSERT INTO store VALUES (6, 'Rangers', 'Seager', 6, '99');
+INSERT INTO store VALUES (7, 'Red Sox', 'Devers', 7, '99');
+INSERT INTO store VALUES (8, 'Yankees', 'Volpe', 8, '99');
+INSERT INTO store VALUES (9, 'Giants', 'Pederson', 9, '99');
+INSERT INTO store VALUES (10, 'Blue Jays', 'Guerrero Jr', 10, '99');
+INSERT INTO store VALUES (11, 'Phillies', 'Harper', 11, '99');
+INSERT INTO store VALUES (12, 'Phillies', 'Schwarber', 12, '99');
+INSERT INTO store VALUES (13, 'Braves', 'Acuna Jr', 13, '99');
+INSERT INTO store VALUES (15, 'Padres', 'Machago', 15, '99');
+
+--Display Database ordered by popularitiy
+SELECT * from store 
+Order by popularity asc;
+
+--What is the average price of each jersey?
+SELECT AVG(price) from store
+WHERE price
+
+--What team has the most jerseys in the store?
+;SELECT MAX(name) from store
+
+
